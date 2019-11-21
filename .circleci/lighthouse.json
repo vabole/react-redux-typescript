@@ -1,0 +1,10 @@
+{
+    "url" : "https://vigilant-pare-6101d0.netlify.com/",
+    "is_relative_url": false,
+    "requiredScores": {
+      "performance": 100,
+      "accessibility": 92,
+      "best-practices": 100,
+      "seo": 100
+    }
+  }
