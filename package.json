@@ -17,11 +17,20 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postbuild": "react-snap"
+    "postbuild": "react-snap",
+    "lint": "eslint src/**/*.tsx src/**/*.ts --max-warnings 5",
+    "size": "yarn build && size-limit"
+
   },
   "reactSnap": {
     "inlineCss": true
   },
+
+  "size-limit": [
+    {
+      "path": "build/static/**/*.{js,css,svg,woff,woff2,png,ttf,html}"
+    }
+  ],
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -38,6 +47,9 @@
     ]
   },
   "devDependencies": {
-    "react-snap": "^1.23.0"
+    "@size-limit/preset-app": "^2.2.1",
+    "cypress": "^3.6.1",
+    "react-snap": "^1.23.0",
+    "start-server-and-test": "^1.10.6"
   }
 }

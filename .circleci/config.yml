@@ -1,4 +1,6 @@
 version: 2.1
+orbs:
+  snyk: snyk/snyk@0.0.8
 jobs:
   build:
     docker:
@@ -23,6 +25,18 @@ jobs:
       - run:
           name: Run tests
           command: yarn test
+
+      - run:
+          name: Run lint
+          command: yarn lint
+
+      - run:
+          name: Check size
+          command: yarn size
+      - snyk/scan:
+          fail-on-issues: false
+          monitor-on-build: false
+          severity-threshold: high
 
   # Perf tests
   simpleTests:    
