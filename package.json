@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^5.6.2",
     "@types/jest": "24.0.23",
     "@types/node": "12.12.11",
     "@types/react": "16.9.11",
@@ -13,19 +14,17 @@
     "typescript": "3.7.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject",
     "postbuild": "react-snap",
     "lint": "eslint src/**/*.tsx src/**/*.ts --max-warnings 5",
     "size": "yarn build && size-limit"
-
   },
   "reactSnap": {
     "inlineCss": true
   },
-
   "size-limit": [
     {
       "path": "build/static/**/*.{js,css,svg,woff,woff2,png,ttf,html}"
@@ -49,6 +48,8 @@
   "devDependencies": {
     "@size-limit/preset-app": "^2.2.1",
     "cypress": "^3.6.1",
+    "glob-all": "^3.1.0",
+    "purgecss-webpack-plugin": "^1.6.0",
     "react-snap": "^1.23.0",
     "start-server-and-test": "^1.10.6"
   }
