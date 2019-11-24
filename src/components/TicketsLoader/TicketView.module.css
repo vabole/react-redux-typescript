@@ -3,4 +3,21 @@
   background-color: var(--white);
   box-shadow: var(--shadow);
   border-radius: var(--border-radius);
+  margin-bottom: var(--f20);
+  padding: var(--f20);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /*margin-bottom: var(--f20);*/
+  align-items: center;
+}
+
+.price {
+  color: var(--blue);
+  font-size: var(--f24);
+  font-weight: var(--bold);
+  line-height: var(--f24);
 }

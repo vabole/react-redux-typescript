@@ -1,6 +1,11 @@
 import React from "react";
-import styles from "./TicketView.module.css";
+import styles from "./SegmentView.module.css";
 import { Segment } from "../../types/Ticket";
+import {
+  getReadableDuration,
+  getReadableStartToEndTime,
+  numberOfTransfersRussian
+} from "./ticketViewUtils";
 
 type SegmetnViewProps = {
   segment: Segment;
@@ -12,16 +17,16 @@ export const SegmentView = (props: SegmetnViewProps) => {
     <article className={styles.segment}>
       <div className={styles.segment_part}>
         <p className={styles.key}>
-          {segment.origin + IATA_SEPARATOR + segment.destination}`
+          {segment.origin + IATA_SEPARATOR + segment.destination}
         </p>
-        <p className={styles.value}>{segment.date}</p>
+        <p className={styles.value}>{getReadableStartToEndTime(segment)}</p>
       </div>
       <div className={styles.segment_part}>
         <p className={styles.key}>В пути</p>
-        <p className={styles.value}>{segment.duration}</p>
+        <p className={styles.value}>{getReadableDuration(segment)}</p>
       </div>
       <div className={styles.segment_part}>
-        <p className={styles.key}>{segment.stops.length + " " + "пересадки"}</p>
+        <p className={styles.key}>{numberOfTransfersRussian(segment)}</p>
         <p className={styles.value}>{segment.stops.join(", ")}</p>
       </div>
     </article>

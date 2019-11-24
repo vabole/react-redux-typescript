@@ -1,5 +1,5 @@
 .ticketsContainer {
-  margin: var(--f20) var(--f20) calc(var(--f10) * 12);
+  margin: var(--f20) 0 calc(var(--f10) * 10);
   display: flex;
   flex-direction: column;
 }

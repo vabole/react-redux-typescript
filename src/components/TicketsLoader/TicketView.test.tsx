@@ -5,6 +5,7 @@ import { TicketView } from "./TicketView";
 it("renders without crashing", () => {
   const div = document.createElement("div");
   const ticket = {
+    id: "test_id",
     price: 43264,
     carrier: "FV",
     segments: [

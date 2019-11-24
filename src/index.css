@@ -4,7 +4,9 @@
   /* Colors */
   --white: #fff;
   --light-grey: #f3f7fa;
+  --aqua: #f1fcff;
   --light-blue: #9abbce;
+  --blue-grey: #a0b0b9;
   --blue: #2196f3;
   --grey: #4a4a4a;
 
@@ -15,6 +17,8 @@
   /*Relative Sizes */
 
   font-size: 16px;
+  --f8: 0.5rem;
+  --f9: 0.5625rem;
   --f10: 0.625rem;
   --f11: 0.6875rem;
   --f12: 0.75rem;
@@ -26,6 +30,10 @@
   --f18: 1.125rem;
   --f19: 1.1875rem;
   --f20: 1.25rem;
+  --f21: 1.3125rem;
+  --f22: 1.375rem;
+  --f23: 1.4375rem;
+  --f24: 1.5rem;
 
   /* Font */
 

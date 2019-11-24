@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./TicketsLoader.module.css";
-import {NormalizedTicket, Ticket} from "../../types/Ticket";
+import { NormalizedTicket } from "../../types/Ticket";
 
 import { TicketView } from "./TicketView";
 
@@ -13,7 +13,7 @@ export const TicketsLoader = (props: TicketsLoaderProps) => {
   return (
     <div className={styles.ticketsContainer}>
       {tickets.map(ticket => (
-        <TicketView ticket={ticket} key={ticket.id}/>
+        <TicketView ticket={ticket} key={ticket.id} />
       ))}
     </div>
   );

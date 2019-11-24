@@ -2,11 +2,16 @@
   width: 78vw;
   display: flex;
 
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 @media (max-width: 900px) {
   .main {
     width: 97vw;
   }
+}
+
+.tickets {
+  min-width: 52vw;
+  margin-left: var(--f20);
 }
