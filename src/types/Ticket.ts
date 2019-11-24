@@ -20,3 +20,7 @@ export type Segment = {
   // Общее время перелёта в минутах
   duration: number;
 };
+
+export interface NormalizedTicket extends Ticket {
+  id: string;
+}

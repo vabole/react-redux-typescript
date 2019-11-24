@@ -5,6 +5,7 @@ import { SortingTabs } from "../SortingTabs/SortingTabs";
 import { TicketsLoader } from "../TicketsLoader/TicketsLoader";
 import { tickets } from "../TicketsLoader/sampleTickets";
 
+const normalizedTickets = tickets.map(normalizeTicket);
 export const Main = () => {
   return (
     <main className={styles.main}>

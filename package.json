@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/blueimp-md5": "^2.7.0",
     "@types/jest": "24.0.23",
     "@types/node": "12.12.11",
     "@types/react": "16.9.11",
     "@types/react-dom": "16.9.4",
+    "blueimp-md5": "^2.12.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "^3.3.0-next.62",
@@ -19,7 +21,8 @@
     "eject": "react-scripts eject",
     "postbuild": "react-snap",
     "lint": "eslint src/**/*.tsx src/**/*.ts --max-warnings 5",
-    "size": "yarn build && size-limit"
+    "size": "yarn build && size-limit",
+    "prettier": "prettier 'src/**' --write"
   },
   "reactSnap": {
     "inlineCss": true
@@ -51,6 +54,7 @@
     "cypress": "^3.6.1",
     "glob-all": "^3.1.0",
     "normalize.css": "^8.0.1",
+    "prettier": "^1.19.1",
     "purgecss-webpack-plugin": "^1.6.0",
     "react-snap": "^1.23.0",
     "start-server-and-test": "^1.10.6"
