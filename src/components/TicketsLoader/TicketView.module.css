@@ -1,0 +1,6 @@
+.ticket {
+  width: 100%;
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
+}
