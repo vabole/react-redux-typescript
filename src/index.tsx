@@ -1,8 +1,9 @@
 import React from "react";
 import "./index.css";
-import App from "./App";
+import { App } from "./components/App/App";
 import * as serviceWorker from "./serviceWorker";
 import { hydrate, render } from "react-dom";
+import "normalize.css";
 
 const rootElement = document.getElementById("root");
 if (rootElement && rootElement.hasChildNodes()) {

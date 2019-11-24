@@ -1,13 +1,57 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/******** Page wide CSS variables ********/
+
+:root {
+  /* Colors */
+  --white: #fff;
+  --light-grey: #f3f7fa;
+  --light-blue: #9ABBCE;
+  --blue: #2196F3;
+  --grey: #4A4A4A;
+
+  /* Box Shadows  */
+
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  /*Relative Sizes */
+
+  font-size: 16px;
+  --f10: 0.625rem;
+  --f11: 0.6875rem;
+  --f12: 0.75rem;
+  --f13: 0.8125rem;
+  --f14: 0.875rem;
+  --f15: 0.9375rem;
+  --f16: 1rem;
+  --f17: 1.0625rem;
+  --f18: 1.125rem;
+  --f19: 1.1875rem;
+  --f20: 1.25rem;
+
+  /* Font */
+
+  --bold: 600;
+
+  /* Various */
+  --border-radius: 5px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  margin: 0;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--light-grey);
+  display: flex;
+  justify-content: center;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
