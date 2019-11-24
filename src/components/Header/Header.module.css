@@ -8,3 +8,9 @@
   width: 82px;
   height: 89px;
 }
+
+@media (max-width: 600px) {
+  .header {
+    padding: 0;
+  }
+}

@@ -14,9 +14,9 @@
 
   --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
-  /*Relative Sizes */
-
   font-size: 16px;
+  /*Root Relative Sizes */
+  --f1: 0.0625rem;
   --f8: 0.5rem;
   --f9: 0.5625rem;
   --f10: 0.625rem;
@@ -62,4 +62,15 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+}
+@media (max-width: 640px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 555px) {
+  :root {
+    font-size: 12px;
+  }
 }

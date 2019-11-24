@@ -15,3 +15,13 @@
   min-width: 52vw;
   margin-left: var(--f20);
 }
+
+@media (max-width: 600px) {
+  .main {
+    flex-direction: column;
+  }
+  .main > form {
+    width: calc(97vw - var(--f20));
+    margin: var(--f20);
+  }
+}
