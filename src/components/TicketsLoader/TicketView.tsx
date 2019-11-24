@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./TicketView.module.css";
 import { SegmentView } from "./SegmentView";
-import { Ticket } from "../../types/Ticket";
+import {NormalizedTicket} from "../../types/Ticket";
 
 type TicketViewProps = {
-  ticket: Ticket;
+  ticket: NormalizedTicket;
 };
 export const TicketView = (props: TicketViewProps) => {
   const { ticket } = props;
@@ -14,8 +14,8 @@ export const TicketView = (props: TicketViewProps) => {
         <div className={styles.price}>{ticket.price}</div>
         <div className={styles.carrier}>{ticket.carrier}</div>
       </div>
-      {ticket.segments.map(segment => (
-        <SegmentView segment={segment} />
+      {ticket.segments.map((segment, i) => (
+        <SegmentView segment={segment} key={i}/>
       ))}
     </article>
   );
