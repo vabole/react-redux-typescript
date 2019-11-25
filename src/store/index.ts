@@ -4,6 +4,8 @@ import { ticketsReducer } from "./tickets/reducer";
 import { TicketsState } from "./tickets/types";
 import { ticketsSaga } from "./tickets/sagas";
 
+export { initialState } from "./tickets/reducer";
+
 export type ApplicationState = TicketsState;
 export const createRootReducer = () =>
   combineReducers({

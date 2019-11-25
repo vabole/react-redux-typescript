@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./TicketView.module.css";
 import { SegmentView } from "./SegmentView";
-import { TicketNormalized } from "../../store/tickets/types";
-import { priceString } from "./ticketViewUtils";
+import { Ticket } from "../../store/tickets/types";
+import { carrierImg, priceString } from "./ticketViewUtils";
 
 type TicketViewProps = {
-  ticket: TicketNormalized;
+  ticket: Ticket;
 };
 export const TicketView = (props: TicketViewProps) => {
   const { ticket } = props;
@@ -14,7 +14,7 @@ export const TicketView = (props: TicketViewProps) => {
       <div className={styles.header}>
         <div className={styles.price}>{priceString(ticket.price)}</div>
         <img
-          src={`https://pics.avs.io/99/36/${ticket.carrier}.png`}
+          src={carrierImg(ticket)}
           className={styles.carrier}
           alt={ticket.carrier}
         />

@@ -1,12 +1,13 @@
 import { Reducer } from "redux";
-import { TicketNormalized, TicketsState, TicketsActionTypes } from "./types";
-import { tickets } from "../../components/TicketsLoader/sampleTickets";
-import { normalizeTicket } from "./utils";
+import { TicketsState, TicketsActionTypes } from "./types";
+import { allStopFiltersOn, toggleStopsFilter } from "./helpers";
 
 export const initialState: TicketsState = {
   searchId: "",
-  tickets: {},
+  tickets: [],
   errors: [],
+  stopsFilters: allStopFiltersOn,
+  sorting: "BY_PRICE",
   isFetchingTickets: false,
   isFetchingSearchId: false,
   isPolling: false
@@ -21,7 +22,7 @@ const reducer: Reducer<TicketsState> = (state = initialState, action) => {
       return {
         ...state,
         isFetchingTickets: false,
-        tickets: { ...state.tickets, ...action.payload.map(normalizeTicket) }
+        tickets: [...state.tickets, ...action.payload]
       };
     }
     case TicketsActionTypes.FETCH_TICKETS_ERROR: {
@@ -54,17 +55,24 @@ const reducer: Reducer<TicketsState> = (state = initialState, action) => {
       };
     }
 
-    case TicketsActionTypes.POLLING_START: {
+    case TicketsActionTypes.SORT_BY_PRICE: {
       return {
         ...state,
-        isPolling: true
+        sorting: "BY_PRICE"
       };
     }
 
-    case TicketsActionTypes.POLLING_END: {
+    case TicketsActionTypes.SORT_BY_DURATION: {
       return {
         ...state,
-        isPolling: false
+        sorting: "BY_DURATION"
+      };
+    }
+
+    case TicketsActionTypes.TOGGLE_STOPS_FILTER: {
+      return {
+        ...state,
+        stopsFilters: toggleStopsFilter(state.stopsFilters, action.payload)
       };
     }
 

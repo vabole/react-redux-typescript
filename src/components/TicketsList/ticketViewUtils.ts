@@ -1,4 +1,4 @@
-import { Segment } from "../../store/tickets/types";
+import { Segment, Ticket } from "../../store/tickets/types";
 
 const SEPARATOR = "–";
 // Get time in HH:MM format
@@ -84,3 +84,6 @@ const CURRENCY_SYMBOL = "Р";
  */
 export const priceString = (price: number): string =>
   splitNumber(price) + " " + CURRENCY_SYMBOL;
+
+export const carrierImg = (ticket: Ticket) =>
+  `https://pics.avs.io/99/36/${ticket.carrier}.png`;
