@@ -4,7 +4,7 @@ import { StopFiltersForm } from "../StopFiltersForm/StopFiltersForm";
 import { SortingTabs } from "../SortingTabs/SortingTabs";
 import { TicketsLoader } from "../TicketsLoader/TicketsLoader";
 import { tickets } from "../TicketsLoader/sampleTickets";
-import { normalizeTicket } from "../../api/utils";
+import { normalizeTicket } from "../../store/tickets/utils";
 
 const normalizedTickets = tickets.map(normalizeTicket);
 

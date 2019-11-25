@@ -1,7 +1,7 @@
 import { Reducer } from "redux";
 import { TicketNormalized, TicketsState, TicketsActionTypes } from "./types";
 import { tickets } from "../../components/TicketsLoader/sampleTickets";
-import { normalizeTicket } from "../../api/utils";
+import { normalizeTicket } from "./utils";
 
 export const initialState: TicketsState = {
   searchId: "",
