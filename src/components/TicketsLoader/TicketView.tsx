@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./TicketView.module.css";
 import { SegmentView } from "./SegmentView";
-import { NormalizedTicket } from "../../types/Ticket";
+import { TicketNormalized } from "../../store/tickets/types";
 import { priceString } from "./ticketViewUtils";
 
 type TicketViewProps = {
-  ticket: NormalizedTicket;
+  ticket: TicketNormalized;
 };
 export const TicketView = (props: TicketViewProps) => {
   const { ticket } = props;

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./SegmentView.module.css";
-import { Segment } from "../../types/Ticket";
+import { Segment } from "../../store/tickets/types";
 import {
   getReadableDuration,
   getReadableStartToEndTime,

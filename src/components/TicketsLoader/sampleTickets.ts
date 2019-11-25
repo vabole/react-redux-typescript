@@ -1,4 +1,4 @@
-import { Ticket } from "../../types/Ticket";
+import { Ticket } from "../../store/tickets/types";
 
 export const tickets: Ticket[] = [
   {

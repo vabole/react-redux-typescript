@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./TicketsLoader.module.css";
-import { NormalizedTicket } from "../../types/Ticket";
+import { TicketNormalized } from "../../store/tickets/types";
 
 import { TicketView } from "./TicketView";
 
 export type TicketsLoaderProps = {
-  tickets: NormalizedTicket[];
+  tickets: TicketNormalized[];
 };
 
 export const TicketsLoader = (props: TicketsLoaderProps) => {

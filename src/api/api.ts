@@ -1,7 +1,7 @@
 import { get, retryGet } from "./get";
 import { tickets } from "../components/TicketsLoader/sampleTickets";
-import { NormalizedTicket } from "../types/Ticket";
-import { normalizeTicket } from "../model/utils";
+import { TicketNormalized } from "../store/tickets/types";
+import { normalizeTicket } from "./utils";
 
 const routes = {
   searchId: "/search",
@@ -13,7 +13,7 @@ const fetchSearchId = async (): Promise<string> => {
   return searchId;
 };
 
-export const fetchTickets = async (): Promise<NormalizedTicket[]> => {
+export const fetchTickets = async (): Promise<TicketNormalized[]> => {
   try {
     const searchId = await fetchSearchId();
     const tickets = [];

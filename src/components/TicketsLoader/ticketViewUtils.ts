@@ -1,4 +1,4 @@
-import { Segment } from "../../types/Ticket";
+import { Segment } from "../../store/tickets/types";
 
 const SEPARATOR = "–";
 // Get time in HH:MM format
