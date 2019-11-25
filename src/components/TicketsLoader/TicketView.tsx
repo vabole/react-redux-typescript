@@ -2,8 +2,8 @@ import React from "react";
 import styles from "./TicketView.module.css";
 import { SegmentView } from "./SegmentView";
 import { NormalizedTicket } from "../../types/Ticket";
+import { priceString } from "./ticketViewUtils";
 
-const CURRENCY_SYMBOL = "Р";
 type TicketViewProps = {
   ticket: NormalizedTicket;
 };
@@ -12,9 +12,7 @@ export const TicketView = (props: TicketViewProps) => {
   return (
     <article className={styles.ticket}>
       <div className={styles.header}>
-        <div className={styles.price}>
-          {ticket.price + " " + CURRENCY_SYMBOL}
-        </div>
+        <div className={styles.price}>{priceString(ticket.price)}</div>
         <img
           src={`https://pics.avs.io/99/36/${ticket.carrier}.png`}
           className={styles.carrier}

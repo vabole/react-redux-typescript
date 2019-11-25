@@ -1,32 +1,31 @@
 import React from "react";
 import styles from "./StopFiltersForm.module.css";
 
+type CheckBoxWithLabelProps = {
+  filter: string;
+  label: string;
+};
+const CheckBoxWithLabel = (props: CheckBoxWithLabelProps) => {
+  const { filter, label } = props;
+  return (
+    <label htmlFor={filter}>
+      <input id={filter} type="checkbox" />
+      {label}
+    </label>
+  );
+};
+
+
 export const StopFiltersForm = () => {
   return (
     <form className={styles.form}>
       <legend>Количество пересадок</legend>
 
-      <label htmlFor="all">
-        <input id="all" type="checkbox"></input>
-        Все
-      </label>
-
-      <label htmlFor="no-stops">
-        <input id="no-stops" type="checkbox"></input>
-        Без пересадок
-      </label>
-
-      <label htmlFor="1-stop">
-        <input id="1-stop" type="checkbox"></input>1 пересадка
-      </label>
-
-      <label htmlFor="2-stops">
-        <input id="2-stop" type="checkbox"></input>2 пересадки
-      </label>
-
-      <label htmlFor="3-stops">
-        <input id="3-stops" type="checkbox"></input>3 пересадки
-      </label>
+      <CheckBoxWithLabel filter='all' label='Все'/>
+      <CheckBoxWithLabel filter='no_stops' label='Без пересадок'/>
+      <CheckBoxWithLabel filter='1_stop' label='1 пересадка'/>
+      <CheckBoxWithLabel filter='2_stops' label='2 пересадки'/>
+      <CheckBoxWithLabel filter='3_stops' label='3 пересадки'/>
     </form>
   );
 };

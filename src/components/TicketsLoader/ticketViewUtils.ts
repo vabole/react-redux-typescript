@@ -65,3 +65,22 @@ export const numberOfTransfersRussian = (segment: Segment): string => {
       return segment.stops + " пересадок";
   }
 };
+
+/*
+ adds space between thousands and hundreds, to make reading number easier
+ for example, 123456 becomes '123 456'
+*/
+const splitNumber = (number: number): string => {
+  const stringified = String(number);
+  const hundreds = stringified.slice(-3);
+  const thousands = stringified.slice(-6, -3);
+
+  return [thousands, hundreds].join(" ");
+};
+
+const CURRENCY_SYMBOL = "Р";
+/*
+  Returns formated price string with currency symbol added
+ */
+export const priceString = (price: number): string =>
+  splitNumber(price) + " " + CURRENCY_SYMBOL;
