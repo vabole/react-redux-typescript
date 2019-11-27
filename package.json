@@ -33,7 +33,7 @@
     "prettier": "prettier 'src/**' --write"
   },
   "reactSnap": {
-    "inlineCss": true
+    "inlineCss": false
   },
   "size-limit": [
     {
