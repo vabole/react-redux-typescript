@@ -39,6 +39,7 @@ jobs:
           severity-threshold: high
 
   # Perf tests
+  parallelism: 3
   simpleTests:    
     docker:
       - image: kanopi/ci:edge-lighthouse
