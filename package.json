@@ -32,6 +32,9 @@
     "size": "yarn build && size-limit",
     "prettier": "prettier 'src/**' --write"
   },
+  "reactSnap": {
+    "inlineCss": true
+  },
   "size-limit": [
     {
       "path": "build/static/**/*.{js,css,svg,woff,woff2,png,ttf,html}"
@@ -42,9 +45,7 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+      "defaults"
     ],
     "development": [
       "last 1 chrome version",
