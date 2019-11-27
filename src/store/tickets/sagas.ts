@@ -42,7 +42,8 @@ function* handleTicketsPolling(searchId: string) {
         yield put(fetchTicketsSuccess(tickets));
       }
     } catch (error) {
-      // console.warn(error);
+      // do nothing with error -> just retry
+      // some limit of retries would be nice though
       yield put(fetchTicketsError(error));
     }
   }

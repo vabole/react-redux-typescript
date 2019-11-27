@@ -24,10 +24,6 @@ const sortByDuration = (tickets: Ticket[]): Ticket[] =>
 const sortByPrice = (tickets: Ticket[]): Ticket[] =>
   tickets.slice().sort((ticket1, ticket2) => ticket1.price - ticket2.price);
 
-const take5 = (tickets: Ticket[]) => {
-  return tickets.slice(0, 5);
-};
-
 const applyStopsFilters = (tickets: Ticket[], stopsFilters: StopFilters) => {
   let filtered = [...tickets];
   if (stopsFilters["all"]) {
@@ -44,15 +40,19 @@ const applyStopsFilters = (tickets: Ticket[], stopsFilters: StopFilters) => {
 };
 
 export const sortingSelector = createSelector(
-  [tickets, sorting, stopsFilters],
-  (tickets, sorting, stopsFilters) => {
+  [tickets, sorting],
+  (tickets, sorting) => {
     switch (sorting) {
       case "BY_DURATION":
-        return applyStopsFilters(sortByDuration(tickets), stopsFilters);
+        return sortByDuration(tickets);
       case "BY_PRICE":
-        return applyStopsFilters(sortByPrice(tickets), stopsFilters);
+        return sortByPrice(tickets);
     }
   }
 );
 
-export const visibleTickets = createSelector(sortingSelector, take5);
+export const visibleTickets = createSelector(
+  [sortingSelector, stopsFilters],
+  (tickets, stopsFilters) =>
+    applyStopsFilters(tickets, stopsFilters).slice(0, 5)
+);

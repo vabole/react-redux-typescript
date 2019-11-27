@@ -1,9 +1,5 @@
 import { action } from "typesafe-actions";
-import {
-  StopFiltersKey,
-  Ticket,
-  TicketsActionTypes,
-} from "./types";
+import { StopFiltersKey, Ticket, TicketsActionTypes } from "./types";
 
 //** Fetch tickets **/
 export const fetchTicketsRequest = () =>
@@ -32,6 +28,5 @@ export const sortByDurationAction = () =>
 export const sortByPriceAction = () => action(TicketsActionTypes.SORT_BY_PRICE);
 
 /* Togle flight-stops filters */
-export const toggleStopsFilterAction = (
-  filterToToggle: StopFiltersKey
-) => action(TicketsActionTypes.TOGGLE_STOPS_FILTER, filterToToggle);
+export const toggleStopsFilterAction = (filterToToggle: StopFiltersKey) =>
+  action(TicketsActionTypes.TOGGLE_STOPS_FILTER, filterToToggle);

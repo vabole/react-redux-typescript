@@ -1,16 +1,13 @@
 import md5 from "blueimp-md5";
-import {
-  TicketsNormalized,
-  Ticket,
-  TicketNormalized
-} from "./types";
+import { TicketsNormalized, Ticket, TicketNormalized } from "./types";
 
 export const normalizeTicket = (ticket: Ticket): TicketNormalized => ({
   ...ticket,
   id: md5(JSON.stringify(ticket))
 });
 
-export const getTicketId = (ticket: Ticket): string => md5(JSON.stringify(ticket));
+export const getTicketId = (ticket: Ticket): string =>
+  md5(JSON.stringify(ticket));
 
 export const normalizeTickets = (tickets: Ticket[]): TicketsNormalized => {
   return tickets.reduce((normalizedCollection: TicketsNormalized, ticket) => {

@@ -5,7 +5,7 @@ import {
 } from "../store/tickets/types";
 
 async function get(route: string, baseUrl = BASE_URL) {
-  try{
+  try {
     const response = await fetch(baseUrl + route, {
       headers: {
         Accept: "application/json"
@@ -15,7 +15,7 @@ async function get(route: string, baseUrl = BASE_URL) {
       return response.json();
     }
     return Promise.reject(response);
-  }catch (e) {
+  } catch (e) {
     // do nothing -> will try again later
   }
 }
