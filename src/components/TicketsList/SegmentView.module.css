@@ -4,7 +4,7 @@
 }
 
 .segment_part {
-  flex-basis: 33%;
+  flex-basis: 35%;
 }
 
 .segment_part .key {
@@ -22,4 +22,11 @@
   line-height: 0.7;
   color: var(--grey);
   font-weight: var(--bold);
+}
+
+@media (max-width: 600px) {
+  .segment_part .key {
+    letter-spacing: normal;
+    line-height: normal;
+  }
 }

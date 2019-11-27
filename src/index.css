@@ -63,14 +63,3 @@ html {
 *:after {
   box-sizing: inherit;
 }
-@media (max-width: 640px) {
-  :root {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 555px) {
-  :root {
-    font-size: 12px;
-  }
-}

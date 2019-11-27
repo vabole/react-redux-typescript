@@ -5,15 +5,17 @@
   justify-content: space-evenly;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .main {
-    width: 97vw;
+    width: 99vw;
   }
 }
 
 .tickets {
   min-width: 52vw;
-  margin-left: var(--f20);
+  /* margin-left: var(--f10); */
+  margin: 0 var(--f10);
+
 }
 
 @media (max-width: 600px) {
@@ -21,7 +23,7 @@
     flex-direction: column;
   }
   .main > form {
-    width: calc(97vw - var(--f20));
-    margin: var(--f20);
+    width: calc(99vw - var(--f20));
+    margin: var(--f10);
   }
 }
