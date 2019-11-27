@@ -38,9 +38,9 @@ jobs:
           monitor-on-build: false
           severity-threshold: high
 
-  # Perf tests
-  parallelism: 3
+  # Perf tests  
   simpleTests:    
+    parallelism: 3
     docker:
       - image: kanopi/ci:edge-lighthouse
     steps:
