@@ -21,20 +21,20 @@ export const SortingTabs = () => {
   const sortingByPrice = useSelector(sortingByPriceIsOn);
   return (
     <div className={styles.tabs}>
-      <div
+      <button
         className={styles.tab}
         data-active={sortingByPrice}
         onClick={sortByPrice}
       >
         Самый дешёвый
-      </div>
-      <div
+      </button>
+      <button
         className={styles.tab}
         data-active={!sortingByPrice}
         onClick={sortByDuration}
       >
         Самый быстрый
-      </div>
+      </button>
     </div>
   );
 };

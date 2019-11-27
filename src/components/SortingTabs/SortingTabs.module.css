@@ -4,7 +4,6 @@
 
   display: flex;
   background-color: var(--white);
-  box-shadow: var(--shadow);
   border-radius: var(--border-radius);
   font-size: var(--f12);
   text-transform: uppercase;
@@ -16,11 +15,24 @@
 }
 
 .tab {
+  font-size: var(--f12);
+  font-weight: var(--bold);
+  font-family: inherit;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  line-height: var(--f20);
+  background-color: var(--white);
+  border: 1px solid var(--secondary);
   flex-grow: 1;
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
   color: var(--grey);
+  cursor: pointer;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .tab[data-active="true"] {
