@@ -4,7 +4,7 @@
 
 [Тестовое задание для aviasales](https://github.com/KosyanMedia/test-tasks/tree/master/aviasales_frontend)
 
-## Краткое описание того что сделано:
+## Краткое описание
 
 1. Настроен CI/CD Pipeline
    - при коммитах и пул-реквестах автоматически запускаются тесты
