@@ -13,9 +13,7 @@
 
 .tickets {
   min-width: 52vw;
-  /* margin-left: var(--f10); */
   margin: 0 var(--f10);
-
 }
 
 @media (max-width: 600px) {
