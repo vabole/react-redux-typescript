@@ -35,6 +35,12 @@
   -moz-appearance: none;
 }
 
+.tab:hover{
+  opacity: .5;
+  transition-property: opacity;
+  transition-duration: .2s;
+}
+
 .tab[data-active="true"] {
   border: none;
   color: var(--white);

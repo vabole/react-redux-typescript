@@ -23,8 +23,8 @@
   font-weight: var(--bold);
   letter-spacing: 0.5px;
   text-align: center;
-
   color: var(--grey);
+  cursor: default;
 }
 .form label {
   padding: var(--f10) var(--f20);
