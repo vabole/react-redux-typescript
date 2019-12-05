@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import styles from "./StopFiltersForm.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleStopsFilterAction } from "../../store/tickets/actions";
@@ -15,6 +15,10 @@ const CheckBoxWithLabel = (props: CheckBoxWithLabelProps) => {
   const dispatch = useDispatch();
   const filters = useSelector(stopsFilters);
   const isChecked = filters[filter];
+  const toggleFilterAction = useCallback(
+    () => dispatch(toggleStopsFilterAction(filter)),
+    [filter]
+  );
 
   return (
     <label htmlFor={filter}>
@@ -22,7 +26,7 @@ const CheckBoxWithLabel = (props: CheckBoxWithLabelProps) => {
         id={filter}
         type="checkbox"
         checked={isChecked}
-        onChange={() => dispatch(toggleStopsFilterAction(filter))}
+        onChange={toggleFilterAction}
       />
       {label}
     </label>
