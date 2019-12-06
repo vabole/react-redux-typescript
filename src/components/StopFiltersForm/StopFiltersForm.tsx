@@ -17,7 +17,7 @@ const CheckBoxWithLabel = (props: CheckBoxWithLabelProps) => {
   const isChecked = filters[filter];
   const toggleFilterAction = useCallback(
     () => dispatch(toggleStopsFilterAction(filter)),
-    [filter]
+    [filter, dispatch]
   );
 
   return (
