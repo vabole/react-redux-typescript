@@ -1779,29 +1779,29 @@
   resolved "https://registry.yarnpkg.com/@redux-saga/types/-/types-1.1.0.tgz#0e81ce56b4883b4b2a3001ebe1ab298b84237204"
   integrity sha512-afmTuJrylUU/0OtqzaRkbyYFFNgCF73Bvel/sw90pvGrWIZ+vyoIJqA6eMSoA6+nb443kTmulmBtC9NerXboNg==
 
-"@size-limit/file@2.2.3":
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/@size-limit/file/-/file-2.2.3.tgz#d84f9588bedabd0502bc63124bb9b1689d4976d2"
-  integrity sha512-qcyfczGyqakI7dNNTUWrR6UilCd74uA5Z47w4zfXMSRbcSJ2HCSWBKZ+DTfxCrzopuEy/cqZAhxaANsVBatH9Q==
+"@size-limit/file@2.2.4":
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/@size-limit/file/-/file-2.2.4.tgz#f9be3947bd4cf6ce98d9f52d544747ef63a634db"
+  integrity sha512-ENz7gmpKH7iDixGezmEgSOetqCMZA8JKrRttZBjgK96tcQasmOoR8zwk5u/qcFTuHlaYKyfYVs6Hv9LcNQ0GRg==
   dependencies:
-    size-limit "2.2.3"
+    size-limit "2.2.4"
 
-"@size-limit/preset-app@^2.2.3":
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/@size-limit/preset-app/-/preset-app-2.2.3.tgz#32d6e6800a06b8792554a3cea389731212725076"
-  integrity sha512-1k15VlNJxndkLZGyfv1ZLe2qC23eOaknkpfKSpEiFQCSX7ItPetin7Z8LCKG6ubvMcnJSuqxdfqt+h20EDQ7xg==
+"@size-limit/preset-app@^2.2.4":
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/@size-limit/preset-app/-/preset-app-2.2.4.tgz#04df04c778333a58bc92d7c7e2420f9449ebe0ce"
+  integrity sha512-s6PzSkTNUJnnr2bNGySQzdZCwd57Xdr4p40AyFz/h9EEJjtGpRGoQafkS4L4ibqygbmd4V4kVxfYcOry7tPZ+A==
   dependencies:
-    "@size-limit/file" "2.2.3"
-    "@size-limit/time" "2.2.3"
+    "@size-limit/file" "2.2.4"
+    "@size-limit/time" "2.2.4"
 
-"@size-limit/time@2.2.3":
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/@size-limit/time/-/time-2.2.3.tgz#4928894e80355c4788eef2b28702c21df811945d"
-  integrity sha512-jqhgbAPGQmvnkoZYg5tkZNqYhw0tU9rNn2+uGzRE8kNDkNVsyFqxEAHemHYz4GAnNO2ta27Ku9ZdIpAMQcy33Q==
+"@size-limit/time@2.2.4":
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/@size-limit/time/-/time-2.2.4.tgz#a70ad726559ecc7686a1591197055215c2f0d6dc"
+  integrity sha512-4eHyeaV2FFqkHluVgT0TTWAXFixnfm0Z3vbUXnKPhv6ZcDU/UCOPfOXrx1pGj7J62w0wkuMOvw2TVJTw1+M8vQ==
   dependencies:
     estimo "^2.0.1"
     react "^16.12.0"
-    size-limit "2.2.3"
+    size-limit "2.2.4"
 
 "@svgr/babel-plugin-add-jsx-attribute@^4.2.0":
   version "4.2.0"
@@ -10545,10 +10545,10 @@ sisteransi@^1.0.3:
   resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-1.0.3.tgz#98168d62b79e3a5e758e27ae63c4a053d748f4eb"
   integrity sha512-SbEG75TzH8G7eVXFSN5f9EExILKfly7SUvVY5DhhYLvfhKqhDFY0OzevWa/zwak0RLRfWS5AvfMWpd9gJvr5Yg==
 
-size-limit@2.2.3:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/size-limit/-/size-limit-2.2.3.tgz#e5e21213b9766b60287dce296f925371537c05e4"
-  integrity sha512-UbhNAVlX/cOcK55XMuXGW1tOoZzMr69+WDDT5PZbQ72lflp1BLpVxk0i5bRuJJAr0Oobr7vFHVeNc9nHkKadWA==
+size-limit@2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/size-limit/-/size-limit-2.2.4.tgz#bd17531e456ee5721a24bfa7de5d6d687c8ad1a0"
+  integrity sha512-YMsA1x+D/kSMN9ui5OKkzNEx3IewdNrYh+HvqE5fKjOlGrmvcB00VnZIXCMsk3KTBBNxg6T1IcwfJaVe7GYNaA==
   dependencies:
     bytes "^3.1.0"
     chalk "^3.0.0"
