@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@types/blueimp-md5": "^2.7.0",
-    "@types/jest": "24.9.0",
+    "@types/jest": "24.9.1",
 
     "@types/node": "13.1.8",
     "@types/react": "16.9.19",
