@@ -59,7 +59,7 @@
     "@size-limit/preset-app": "^3.0.1",
     "glob-all": "^3.2.1",
     "normalize.css": "^8.0.1",
-    "prettier": "^2.0.3",
+    "prettier": "^2.0.4",
     "react-snap": "^1.23.0",
     "start-server-and-test": "^1.10.11"
   }
