@@ -9,7 +9,7 @@
     "@types/node": "14.0.1",
     "@types/react": "16.9.34",
     "@types/react-dom": "16.9.4",
-    "@types/react-redux": "^7.1.7",
+    "@types/react-redux": "^7.1.9",
     "@types/redux-saga": "^0.10.5",
     "blueimp-md5": "^2.13.0",
     "react": "^16.13.1",
