@@ -1976,25 +1976,25 @@
   resolved "https://registry.yarnpkg.com/@redux-saga/types/-/types-1.1.0.tgz#0e81ce56b4883b4b2a3001ebe1ab298b84237204"
   integrity sha512-afmTuJrylUU/0OtqzaRkbyYFFNgCF73Bvel/sw90pvGrWIZ+vyoIJqA6eMSoA6+nb443kTmulmBtC9NerXboNg==
 
-"@size-limit/file@4.5.0":
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/@size-limit/file/-/file-4.5.0.tgz#8e2a32a02a1201221002b20917e2ff62eb6a4528"
-  integrity sha512-CgBDIHahgZQqG43PXtqY0nkWmg6STrWR4JHLL2O/oPf95EN34XLbox7LMjSZqmdXb2iRJOwD3n9Agq5rWNkaAg==
+"@size-limit/file@4.5.2":
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/@size-limit/file/-/file-4.5.2.tgz#c904c08bed011c297f62637c1c86c6c2c5375185"
+  integrity sha512-t8IS2TOs2mm35HHIvH8rG596XZy77121LuIDbRpYbokVygN4EUMmxaV9iteQgpTuhRN4CUbJZJvAi55RMv3K7w==
   dependencies:
     semver "7.3.2"
 
-"@size-limit/preset-app@^4.5.0":
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/@size-limit/preset-app/-/preset-app-4.5.0.tgz#89902c4a81ea994f7f64c7c2c4a0b2c7c40fce01"
-  integrity sha512-+G6RDkcl6IRu3CEJsmlaLtHoEO4rYEi7qjVT0c4ohsH1hrMbS8WRtRBUd8gu9iY/WMclWaXB6gZUNu90qrwvjw==
+"@size-limit/preset-app@^4.5.2":
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/@size-limit/preset-app/-/preset-app-4.5.2.tgz#2f7ab5d19acb35a0f78bab9d5d198bafa76781dc"
+  integrity sha512-S7+qpUdaqLG0ZgixL8DCszcwTtAlFw1f41Uw60ZvXiuLWbddwn66lOBL43OjA95CUpXr5iJtrtsZ61PHKoWQ0w==
   dependencies:
-    "@size-limit/file" "4.5.0"
-    "@size-limit/time" "4.5.0"
+    "@size-limit/file" "4.5.2"
+    "@size-limit/time" "4.5.2"
 
-"@size-limit/time@4.5.0":
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/@size-limit/time/-/time-4.5.0.tgz#da18b619a218543cb531c6577b0f6381351963bb"
-  integrity sha512-6JpzN83VbquoQVfFdyfXXvicUstJW04Lk6WqXmNjnHM9ZToqtNs/yFR66VbnltHoB4oQsYo3ol57R7McsNifYA==
+"@size-limit/time@4.5.2":
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/@size-limit/time/-/time-4.5.2.tgz#ff52deb1853e17a6f030a0f4d38a1aa59a14e2e6"
+  integrity sha512-IrGATfUmq7+BmBJSHoJGu/lhJHY462m3lUed9JvfFQ5kC9PCmBcyeWA0s26CLb2Ik9m9JdVQyvatlZ4QPNkxzA==
   dependencies:
     estimo "^2.0.4"
     react "^16.13.1"
