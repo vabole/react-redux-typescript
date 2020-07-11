@@ -60,6 +60,6 @@
     "normalize.css": "^8.0.1",
     "prettier": "^2.0.4",
     "react-snap": "^1.23.0",
-    "start-server-and-test": "^1.11.0"
+    "start-server-and-test": "^1.11.2"
   }
 }
