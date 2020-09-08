@@ -55,7 +55,7 @@
     ]
   },
   "devDependencies": {
-    "@size-limit/preset-app": "^4.5.0",
+    "@size-limit/preset-app": "^4.6.0",
     "glob-all": "^3.2.1",
     "normalize.css": "^8.0.1",
     "prettier": "^2.0.4",
